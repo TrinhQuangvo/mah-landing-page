@@ -1,45 +1,57 @@
-*{padding: 0;margin: 0;}
-body{
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
 	font-family: "montserrat", sans-serif;
 	color: #fff;
 }
 
-/*-- reusable components--*/
 
+/*-- reusable components--*/
 
 h1 {
 	margin-bottom: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-size: 50px;
-	color:#fff;
+	color: #fff;
 }
-h2{
+
+h2 {
 	text-transform: uppercase;
 	font-size: 40px;
-	color:#fff;
+	color: #fff;
 }
-p{
-		font-size: 18px;
-		padding: 30px 0;
+
+p {
+	font-size: 18px;
+	padding: 30px 0;
 }
-a{
+
+a {
 	font-size: 15px;
 }
-span{
+
+span {
 	font-size: 20px;
 }
-/*-- ruy băng --*/
-.popular{
+
+
+/*-- ribbon --*/
+
+.popular {
 	background: #c03a2b88;
-	color:#fff;
-	transform:rotate(45deg);
+	color: #fff;
+	transform: rotate(45deg);
 	padding: 10px 40px;
 	position: absolute;
 	top: 20px;
 	right: -40px;
 }
-.col{
+
+.col {
 	flex: 23%;
 	max-width: 24%;
 	padding: 10px;
@@ -54,6 +66,7 @@ span{
 	margin-bottom: 50px;
 	border-radius: 15px
 }
+
 
 /*---end reusable --*/
 
@@ -113,90 +126,106 @@ span{
 	visibility: hidden;
 	z-index: -1;
 }
+
+
 /*-- end Header and Navigator --*/
+
 
 /*--- slideshow ---*/
 
-.middle{
+.middle {
 	position: relative;
-  }
-.slider{
+}
+
+.slider {
 	height: 550px;
 }
-.slidershow{
+
+.slidershow {
 	width: 100%;
 	height: 100%;
 	overflow: hidden
 }
-  .navigation{
+
+.navigation {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
-  }
-  .bar{
+}
+
+.bar {
 	width: 50px;
 	height: 10px;
 	border: 2px solid #fff;
 	margin: 15px;
 	cursor: pointer;
 	transition: 1s all;
-	}
-  .bar:hover{
-		background: #fff;
-		transform: translate(1.4);
-	}
+}
 
-  
-  input[name="r"]{
-	  position: absolute;
-	  visibility: hidden;
-  }
-  
-  .slides{
+.bar:hover {
+	background: #fff;
+	transform: translate(1.4);
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+
+.slides {
 	width: 500%;
 	height: 100%;
 	display: flex;
-  }
-  
-  .slide{
+}
+
+.slide {
 	width: 20%;
 	transition: 0.8s;
-  }
-  .slide img{
+}
+
+.slide img {
 	width: 100%;
 	height: 100%;
-  }
-  
-  #r1:checked ~ .s1{
+}
+
+#r1:checked~.s1 {
 	margin-left: 0;
-  }
-  #r2:checked ~ .s1{
+}
+
+#r2:checked~.s1 {
 	margin-left: -20%;
-  }
-  #r3:checked ~ .s1{
+}
+
+#r3:checked~.s1 {
 	margin-left: -40%;
-  }
-  #r4:checked ~ .s1{
+}
+
+#r4:checked~.s1 {
 	margin-left: -60%;
-  }
-  #r5:checked ~ .s1{
+}
+
+#r5:checked~.s1 {
 	margin-left: -80%;
-  }
-  
+}
+
+
 /*--- end slider ---*/
 
+
 /*-- the Content and the Description --*/
-.description{
+
+.description {
 	width: 100%;
 	height: 100vh;
-	background:#000;
+	background: #000;
 	position: relative;
 	overflow: hidden;
 }
-.description::after{
-	content:"";
+
+.description::after {
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -207,38 +236,42 @@ span{
 	opacity: .6;
 	animation: description_ani 10s linear infinite;
 }
-.page-content{
+
+.page-content {
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	z-index: 1;
 	width: 100%;
 	max-width: 800px;
 	padding: 50px 40px;
 }
-.page-content-title{
-	color:#ff7979;
+
+.page-content-title {
+	color: #ff7979;
 	text-transform: uppercase;
 	font-weight: 900;
 	margin-bottom: 20px;
 }
-.page-content a{
+
+.page-content a {
 	text-decoration: none;
 	display: inline-block;
-	color:#ff7979;
-	border:2px solid #ff7979;
+	color: #ff7979;
+	border: 2px solid #ff7979;
 	padding: 10px 20px;
 	transition: 0.4s linear;
 }
-.page-content a:hover{
-	color:#fff;
+
+.page-content a:hover {
+	color: #fff;
 	background: #ff7979;
 }
 
-/*--- end Content --*/
 
+/*--- end Content --*/
 
 
 /*-- about us --*/
@@ -249,25 +282,30 @@ span{
 	background: #e74d3c;
 	padding: 60px;
 }
+
 .ps {
 	margin-bottom: 30px;
 }
+
 .ps a {
 	display: inline-block;
 	overflow: hidden;
 	margin: 40px;
 	border-radius: 50%;
 }
+
 .ps a img {
 	width: 180px;
 	height: 180px;
 	filter: grayscale(100%);
 	transition: 0.4s all;
 }
+
 .ps a:hover>img {
 	filter: none;
 	transform: scale(1.4);
 }
+
 .section {
 	width: 600px;
 	margin: auto;
@@ -275,9 +313,11 @@ span{
 	overflow: hidden;
 	height: 0;
 }
+
 .section:target {
 	height: auto;
 }
+
 .name {
 	display: block;
 	text-align: center;
@@ -286,25 +326,30 @@ span{
 	margin-bottom: 20px;
 }
 
+
 /*-- our service --*/
+
 .our-services {
-    background-image: linear-gradient(45deg,rgba(255, 9, 9, 0) 35%,rgba(255, 251, 35,0.4)),url(http://www.tradeready.ca/wp-content/uploads/2016/09/Working-with-Americans.jpg);
-    background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
-    text-align: center;
+	background-image: linear-gradient(45deg, rgba(255, 9, 9, 0) 35%, rgba(255, 251, 35, 0.4)), url(http://www.tradeready.ca/wp-content/uploads/2016/09/Working-with-Americans.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
 }
+
 .our-services-title {
 	display: inline-block;
 	margin-top: 40px;
 	padding-bottom: 20px;
 }
+
 .cen {
 	max-width: 1200;
 	margin: auto;
 	overflow: hidden;
 	padding: 20px;
 }
+
 .service {
 	display: inline-block;
 	width: calc(100%/3);
@@ -314,58 +359,70 @@ span{
 	cursor: pointer;
 	transition: 0.3 all;
 }
+
 .service:hover {
 	background: #27ae5f50;
 }
+
 .service i {
 	font-size: 24px;
 	margin-bottom: 30px;
 }
-.service-roles{
+
+.service-roles {
 	text-transform: uppercase;
 	font-weight: 500;
 	margin: 0;
 	margin-bottom: 30px;
 }
+
 .service p {
-  font-weight: 500;
-  padding-bottom: 60px;
+	font-weight: 500;
+	padding-bottom: 60px;
 }
+
 
 /*-- pricing ---*/
 
-.pricing-table{
+.pricing-table {
 	height: auto;
 	display: flex;
 	justify-content: center;
 	padding: 50px;
-	background-image:url(http://www.securesourced.com/wp-content/uploads/services.background.png);
+	background-image: url(http://www.securesourced.com/wp-content/uploads/services.background.png);
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
 	flex-wrap: wrap;
 }
+
+
 /*-- col h2 đã tự động thêm vào ở reusable components --*/
-.table{
+
+.table {
 	padding: 40px 30px;
 	position: relative;
 	background: #7f8c8d8c;
 	overflow: hidden;
 	box-shadow: 0 0 10px #000;
 }
-.table ul li{
+
+.table ul li {
 	padding: 20 10px;
 	list-style: none;
 }
-.price{
+
+.price {
 	display: block;
 }
-.price span{
+
+.price span {
 	display: block;
 	font-size: 20px;
 	padding-bottom: 30px;
 }
-.table a{
+
+.table a {
 	text-decoration: none;
 	border: 2px solid #fff;
 	display: block;
@@ -375,66 +432,83 @@ span{
 	text-transform: uppercase;
 	transition: 0.5s linear;
 }
-.table a:hover{
+
+.table a:hover {
 	background: #2c3e50;
 	transform: scale(1.1);
 }
 
+
 /*-- end pricing ---*/
+
+
 /*-- testimonials --*/
-.testimonials{
+
+.testimonials {
 	padding: 40px 0;
 	position: relative;
 	background: #27ae60;
 	color: #000;
 	text-align: center;
 }
-.inner{
+
+.inner {
 	max-width: 1200px;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 20px;
 }
-.row{
+
+.row {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.testimonial{
+
+.testimonial {
 	padding: 20px;
 }
-.testimonial img{
+
+.testimonial img {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	filter: grayscale(50%);
 	transition: 0.5s all;
 }
-.testimonial img:hover{
+
+.testimonial img:hover {
 	filter: none;
 	transform: scale(1.5);
 }
-.starts{
+
+.starts {
 	color: gold;
 	margin: 30px 20px;
 }
-.fullname{
+
+.fullname {
 	font-size: 20px;
 	text-transform: uppercase;
 	margin: 20px 0;
 	letter-spacing: 2px;
 }
+
+
 /*--- end testimonials --*/
 
+
 /*--- contact form --*/
-.contact-form{
-	background-image:url(https://farm8.staticflickr.com/7073/7378777532_0fd3f10c00_b.jpg);
+
+.contact-form {
+	background-image: url(https://farm8.staticflickr.com/7073/7378777532_0fd3f10c00_b.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-.form{
+
+.form {
 	background: #51e3ee2f;
 	text-align: center;
 	padding: 30px 40px;
@@ -444,21 +518,25 @@ span{
 	box-shadow: 0 0 20px #000;
 	width: 40%;
 }
-.txtab{
-	border:2px solid rgb(0, 0, 0);
+
+.txtab {
+	border: 2px solid rgb(0, 0, 0);
 	margin: 8px 0;
 	padding: 12px 18px;
 	border-radius: 10px;
 }
-.txtab label{
+
+.txtab label {
 	display: block;
 	text-align: left;
 	font-size: 15px;
-	color:#fff;
+	color: #fff;
 	font-weight: bolder;
 	letter-spacing: 2px;
 }
-.txtab input , .txtab textarea{
+
+.txtab input,
+.txtab textarea {
 	width: 100%;
 	border: none;
 	background: none;
@@ -467,22 +545,27 @@ span{
 	cursor: text;
 	font-size: 20px;
 }
+
+
 /*-- end contact form --*/
+
 
 /*--end services--*/
 
-footer{
+footer {
 	background-image: url(https://www.calgary.ca/CA/city-manager/scripts/about-us/webparts/images/ourHistory_retina.jpg);
-	height:700px;
+	height: 700px;
 	background-size: cover;
 	background-attachment: local;
 }
-.middle{
+
+.middle {
 	position: relative;
 	text-align: center;
 	top: 30%;
 }
-.social-btn{
+
+.social-btn {
 	display: inline-block;
 	width: 90px;
 	height: 90px;
@@ -493,18 +576,21 @@ footer{
 	overflow: hidden;
 	position: relative;
 }
-.social-btn i{
+
+.social-btn i {
 	line-height: 90px;
 	font-size: 50px;
 	transition: 0.5s linear;
-	color:#2980b9;
+	color: #2980b9;
 }
-.social-btn:hover i{
+
+.social-btn:hover i {
 	transform: scale(1.3);
 	color: #f1f1f1;
 }
-.social-btn::before{
-	content:"";
+
+.social-btn::before {
+	content: "";
 	position: absolute;
 	width: 120%;
 	height: 120%;
@@ -513,37 +599,42 @@ footer{
 	left: -110%;
 	top: 80%;
 }
- .social-btn:hover::before{
+
+.social-btn:hover::before {
 	animation: splited_away 0.7s 1;
 	top: -10%;
 	left: -10%;
 }
-@keyframes splited_away{
-	0%{
-		left:-110%;
+
+@keyframes splited_away {
+	0% {
+		left: -110%;
 		top: 90%;
-	}50%{
+	}
+	50% {
 		left: 10%;
 		top: -30%;
-	}100%{
+	}
+	100% {
 		top: -10%;
 		left: -10%;
 	}
 }
-@keyframes description_ani{
-	50%{
-    transform: scale(2);
-  }
-  100%{
-    transform: scale(1);
-  }
+
+@keyframes description_ani {
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
+
 @media screen and (max-width:650px) {
 	.show-menu-btn,
 	.hide-menu-btn {
 		display: block;
 	}
-	
 	.menu {
 		position: fixed;
 		width: 30%;
@@ -552,83 +643,73 @@ footer{
 		right: -100%;
 		top: 0;
 		text-align: right;
-		padding-top:60px;
+		padding-top: 60px;
 		line-height: normal;
 		transition: 0.7s;
 		z-index: 2;
 	}
-	
 	.menu a {
 		display: block;
 		padding: 20px;
 	}
-	
 	.hide-menu-btn {
-		position: absolute;
-		/* fixed thì "x" sẽ k biến mất , relative thì x sẽ đặt ở dưới cùng */
+		position: absolute; /* fixed thì "x" sẽ k biến mất , relative thì x sẽ đặt ở dưới cùng */
 		top: 40px;
 		right: 20px;
 	}
-	
 	#chk:checked~.menu {
 		right: 0;
 		/* làm cho menu mắc vào thanh bên phải màn hình*/
 	}
-	
-	.slidershow{
+	.slidershow {
 		height: 100%;
 		width: 100%;
 		display: block;
 	}
-	.bar{
+	.bar {
 		width: 20px;
-	}	
-
+	}
 	.about-us {
 		padding: 0;
 	}
-	
 	.about-us-title {
 		padding-top: 40px
 	}
-	
 	.ps a {
 		margin: 10px;
 	}
-	
 	.ps a img {
 		width: 100px;
 		height: 100px;
 	}
-	
 	.section {
 		width: 100%;
 	}
-	
 	.section p {
 		padding-bottom: 20px;
 	}
 	.service {
 		width: 40%;
 	}
-	.service:hover{
+	.service:hover {
 		background: #140202bb;
 		transform: scale(1.2);
 	}
 	/*-- testimonials responsive --*/
-	.col{
+	.col {
 		flex: 50%;
 		max-width: 100%;
 	}
-	.form{
+	.form {
 		width: 100%;
 	}
-	.social-btn{
-		margin:10px;
+	.social-btn {
+		margin: 10px;
 	}
 }
+
 @media screen and (max-width:500px) {
-	.bar{
+	.bar {
 		width: 20px;
 	}
 	.service {
@@ -636,19 +717,18 @@ footer{
 		border-bottom: 1px solid #fff;
 		margin-bottom: 40px;
 	}
-	
-	.service:hover{
+	.service:hover {
 		background: #140202bb;
 		transform: scale(1.2);
 	}
-	.col{
-		flex:100%;
+	.col {
+		flex: 100%;
 		max-width: 100%;
 	}
-	.form{
+	.form {
 		width: 100%;
 	}
-	.social-btn{
-		margin:40px;
+	.social-btn {
+		margin: 40px;
 	}
 }
